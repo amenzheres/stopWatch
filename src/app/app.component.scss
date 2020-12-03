@@ -1,0 +1,35 @@
+$red: red;
+$white: white;
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  p{
+    font: bold 40px/20px 'Heebo', sans-serif;
+    color: $red;
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+    button{
+      border: solid 1px $red;
+      outline: none;
+      cursor: pointer;
+      color: $red;
+      text-transform: uppercase;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 14px;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .active{
+      color: $white;
+      background-color: $red;
+    }
+  }
+}

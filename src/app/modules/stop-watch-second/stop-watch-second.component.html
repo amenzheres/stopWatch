@@ -1,0 +1,10 @@
+<section>
+  <div class="stopwatch">
+    <div class="count" id="count">{{title}}</div>
+    <div class="button-section">
+      <button (click)="started = true">Start</button>
+      <button (click)="started = false">Stop</button>
+      <button (click)="started = true; time = 0">Reset</button>
+    </div>
+  </div>
+</section>
